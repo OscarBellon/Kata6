@@ -2,6 +2,7 @@ package kata6.toys;
 
 public class Car {
     final private Integer serialNumber;
+    final private String type = "Car";
 
     public Car(Integer serialNumber) {
         this.serialNumber = serialNumber;
