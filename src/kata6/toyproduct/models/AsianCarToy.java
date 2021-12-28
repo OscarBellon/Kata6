@@ -22,7 +22,7 @@ public class AsianCarToy implements Toy {
     
     @Override
     public void label(){
-        System.out.printf("packing car '%d'\n", this.serialNumber);
+        System.out.printf("Labelling car '%d'\n", this.serialNumber);
     }
 
     @Override

@@ -3,13 +3,13 @@ package kata6;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.stream.Collectors;
-import kata6.branches.AmericanToyBusiness;
 import kata6.toyproduct.Toy;
 import kata6.business.ToyBusiness;
+import kata6.regionalFactories.AmericanToyFactory;
 
 public class Kata6 {
     public static void main(String[] args) {
-        ToyBusiness business = new AmericanToyBusiness();
+        ToyBusiness business = new ToyBusiness(new AmericanToyFactory());
         ArrayList<Toy> toys = new ArrayList();
         
         Scanner in = new Scanner(System.in);
@@ -21,7 +21,7 @@ public class Kata6 {
                 switch(line) {
                     case "car":
                     case "helicopter":
-                        toys.add(business.createToy(line));
+                        toys.add(business.produceToy(line));
                         System.out.println("Built toys: "+ toys.stream()
                                 .map(h -> h.toString())
                                 .collect(Collectors.joining(", ")));
