@@ -2,11 +2,11 @@ package kata6.toyproduct.models;
 
 import kata6.toyproduct.Toy;
 
-public class HelicopterToy implements Toy{
+public class AsianHelicopterToy implements Toy{
     final private Integer serialNumber;
     final private String type = "Helicopter";
 
-    public HelicopterToy(Integer serialNumber) {
+    public AsianHelicopterToy(Integer serialNumber) {
         this.serialNumber = serialNumber;
     }
     
@@ -26,7 +26,7 @@ public class HelicopterToy implements Toy{
 
     @Override
     public String toString() {
-        return "HelicopterToy{" + "serialNumber=" + serialNumber + '}';
+        return "AsianHelicopterToy{" + "serialNumber=" + serialNumber + '}';
     }
     
 }

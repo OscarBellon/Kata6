@@ -3,15 +3,13 @@ package kata6;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.stream.Collectors;
+import kata6.branches.AmericanToyBusiness;
 import kata6.toyproduct.Toy;
-import kata6.toyproduct.models.CarToy;
-import kata6.toyproduct.models.HelicopterToy;
-import kata6.toys.SerialNumberGenerator;
-import kata6.toys.ToyBusiness;
+import kata6.business.ToyBusiness;
 
 public class Kata6 {
     public static void main(String[] args) {
-        ToyBusiness business = new ToyBusiness();
+        ToyBusiness business = new AmericanToyBusiness();
         ArrayList<Toy> toys = new ArrayList();
         
         Scanner in = new Scanner(System.in);
